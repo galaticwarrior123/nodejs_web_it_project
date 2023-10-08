@@ -34,9 +34,9 @@ body {
   margin: 0 5px;
   color: black;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 20px;
-  font-family: system-ui; }
+  font-family: Arial, Helvetica, sans-serif; }
 
 .header_n2_link:hover {
   color: #6dc7f8;
@@ -45,7 +45,7 @@ body {
 .header_n2_btn {
   text-decoration: none;
   color: #fff;
-  background-color: red;
+  background-image: linear-gradient(0, #4fabd2, #285bb5);
   padding: 10px 5px;
   border-radius: 10px;
   font-weight: 500; }
@@ -128,7 +128,8 @@ body {
 
 .container_nav_search_task {
   width: 100%;
-  height: 40px; }
+  height: 40px;
+  margin-left: 20px; }
 
 .container_nav_search_task_table {
   display: flex; }
@@ -290,12 +291,12 @@ body {
   border-radius: 5px;
   cursor: pointer;
   padding: 5px;
-  background-color: white;
-  text-decoration: none; }
+  background-image: linear-gradient(0, #76c3e4, #3f8edd);
+  text-decoration: none;
+  color: #f4f4f4; }
 
 .container_item_btn_head_1_1:hover {
-  background-color: #e8e0d0;
-  text-decoration: underline; }
+  text-decoration: underline #110b0b; }
 
 .container_item_products {
   border-radius: 5px;
@@ -484,7 +485,7 @@ img {
 .footer {
   padding: 20px;
   border-top: 1px solid #ddd;
-  background-color: #dadab5;
+  background-color: #fff;
   top: 2200px;
   right: 0;
   left: 0;
