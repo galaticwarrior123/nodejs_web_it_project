@@ -1,0 +1,129 @@
+.menu a {
+  color: white; }
+
+.logo_nav {
+  width: 20px; }
+
+ul {
+  list-style-type: none; }
+
+.fixed-top {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.menu ul li {
+  display: inline-flex; }
+
+.menu ul {
+  float: left;
+  display: inline-flex;
+  margin-top: 15px; }
+
+.menu ul li {
+  margin-left: 62px; }
+
+.menu {
+  width: 100%;
+  float: top;
+  height: 45px;
+  background-color: black;
+  color: white;
+  text-decoration-line: none; }
+
+.container-fluid {
+  height: 650px;
+  width: 100%; }
+
+.sidebar {
+  z-index: 1;
+  display: block;
+  padding: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #f5f0e7;
+  border-right: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  height: 100%;
+  float: left; }
+
+.sidebar .nav-link {
+  font-weight: normal;
+  color: #333;
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  border-bottom: 1px dashed #eee; }
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030; }
+
+.nav-item :hover {
+  color: #000;
+  background-color: white; }
+
+.nav-nav-sidebar {
+  padding: 0;
+  margin: 0; }
+
+.navbar-nav .nav-link:hover {
+  color: #f90; }
+
+.btn-danger {
+  background-color: red;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  border-radius: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration-line: none;
+  color: #eee; }
+
+.main {
+  padding-top: 10px;
+  padding-left: 20rem;
+  padding-right: 3rem;
+  padding-bottom: 4rem;
+  color: #e6e6e6; }
+
+.list-group .list-group-item {
+  color: #000;
+  padding: 1rem 0.75rem; }
+
+.list-group {
+  display: flex;
+  flex-direction: column; }
+
+.list-group-item {
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  padding: 8px 10px; }
+
+a {
+  text-decoration-line: none; }
+
+.list-group-item:first-child {
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem; }
+
+.list-group-item:last-child {
+  border-bottom-left-radius: .25rem;
+  border-bottom-right-radius: .25rem; }
+
+@media only screen and (max-width: 1026px) {
+  .menu .navbar-nav {
+    display: none; } }
+
+.btn-danger:hover {
+  background-color: #7d0c0c; }

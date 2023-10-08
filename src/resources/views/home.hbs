@@ -171,131 +171,24 @@
     </div>
 
 
-    <div class="model">
-      <div class="background"></div>
-
-      <div class="container1">
-
-        <div class="content">
-          <h2 class="logo"><i class='bx bxl-firebase'></i>Nhóm 4</h2>
-
-          <div class="text-sci">
-            <h2>Chào mừng!<br><span>Đến Với Timtrotot</span></h2>
-
-            <p>Tại đây các bạn có thể tìm thấy những nơi ở phù hợp với nhu cầu và túi tiền của mỗi người. Hy vọng
-              chúng tôi có thể giúp các bạn tìm được những căn phòng tốt nhất.</p>
-
-            <div class="social-icons">
-              <a href="#"><i class='bx bxl-linkedin'></i></a>
-              <a href="#"><i class='bx bxl-facebook'></i></a>
-              <a href="#"><i class='bx bxl-instagram'></i></a>
-              <a href="#"><i class='bx bxl-gmail'></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tạo 1 cái logreg-box để làm cái khung chung cho form-box login và form-box register -->
-        <div class="logreg-box">
-          <div class="form-box login">
-            <form action="#">
-              <h2>Đăng nhập</h2>
-
-
-              <div class="input-box">
-                <span class="icon"><i class='bx bxs-phone-call'></i></span>
-                <input type="text" required>
-                <label>SĐT</label>
-              </div>
-
-              <div class="input-box">
-                <span class="icon">
-                  <i class='bx bxs-lock-alt'></i>
-                </span>
-                <input type="password" required>
-                <label>Mật khẩu</label>
-              </div>
-
-              <div class="remember-forgot">
-                <label><input type="checkbox">Ghi nhớ đăng nhập</label>
-                <a href="#">Quên mật khẩu?</a>
-              </div>
-
-              <button type="submit" class="btn1">Đăng nhập</button>
-
-              <div class="login-register">
-                <p>Bạn chưa có tài khoản? <a href="#" class="register-link">Đăng ký</a></p>
-              </div>
-              <div class="login-register-exit">
-                <p><a href="/">Trở lại</a> </p>
-              </div>
-            </form>
-          </div>
-
-          <div class="form-box register">
-            <form action="#">
-              <h2>Đăng ký</h2>
-
-              <div class="input-box">
-                <span class="icon"><i class='bx bxs-user'></i></span>
-                <input type="text" required>
-                <label>Tên</label>
-              </div>
-
-              <div class="input-box">
-                <span class="icon"><i class='bx bxs-phone-call'></i></span>
-                <input type="text" required>
-                <label>SĐT</label>
-              </div>
-
-              <div class="input-box">
-                <span class="icon"><i class='bx bxs-lock-alt'></i></span>
-                <input id="password" type="password" required>
-                <label>Mật khẩu</label>
-              </div>
-
-
-              <div class="remember-forgot">
-                <label><input type="checkbox">Tôi đồng ý với những điều khoản & điều kiện</label>
-              </div>
-
-
-              <button type="submit" class="btn1">Đăng ký</button>
-
-              <div class="login-register">
-                <p>Bạn đã có tài khoản? <a href="#" class="login-link">Đăng nhập</a></p>
-              </div>
-
-              <div class="login-register-exit">
-                <p><a href="/">Trở lại</a> </p>
-              </div>
-
-            </form>
-          </div>
-        </div>
-      </div>
-
-      <script src="/src/public/js/script.js"></script>
-    </div>
-
-
-
-
+    {{> login}}
+    
     <div class="container_item_btn">
       <ul>
         <li class="container_item_btn_item">
           <a class="container_item_btn_item_tittle" href="/">« Trang trước </a>
         </li>
         <li class="container_item_btn_item">
-          <a class="container_item_btn_item_tittle" href="/?page=1">1</a>
+          <a class="container_item_btn_item_tittle" href="/">1</a>
         </li>
         <li class="container_item_btn_item">
-          <a class="container_item_btn_item_tittle" href="">2</a>
+          <a class="container_item_btn_item_tittle" href="/?page=2">2</a>
         </li>
         <li class="container_item_btn_item">
-          <a class="container_item_btn_item_tittle" href="">3</a>
+          <a class="container_item_btn_item_tittle" href="/?page=3">3</a>
         </li>
         <li class="container_item_btn_item">
-          <a class="container_item_btn_item_tittle" href="">4</a>
+          <a class="container_item_btn_item_tittle" href="/?page=4">4</a>
         </li>
         <li class="container_item_btn_item">
           <a class="container_item_btn_item_tittle" href="">...</a>
@@ -322,19 +215,19 @@
 
     <section class="container_item_other_screen_hot_news">
       <span id="container_item_header">Tin mới đăng</span>
+
+      {{#each dstro}}
       <div class="container_item_other_screen_hot_news_list">
         <ul class="container_item_other_screen_hot_news_list_pro">
 
 
           <li class="container_item_other_screen_hot_news_list">
             <div class="container_item_other_screen_hot_news_list_sub">
-              <div class="container_item_other_hot_news_pic">
-                img
-              </div>
+              <img class="container_item_other_hot_news_pic" src="/src/public/img/{{this.image}}"></img>
               <div class="container_item_other_hot_news_info">
-                <div class="post_tittle">TITLE</div>
+                <div class="post_tittle">abc</div>
                 <div class="post_dav">
-                  <span class="post_price">TITLE</span>
+                  <span class="post_price">4 triệu/tháng</span>
                   <span class="post_time">TITLE</span>
                 </div>
               </div>
@@ -343,5 +236,6 @@
 
         </ul>
       </div>
+      {{/each}}
     </section>
   </div>

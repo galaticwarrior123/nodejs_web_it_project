@@ -1,10 +1,347 @@
-<div class="mt-4">
-    <div class="row">
-        <div class="col-lg-3">
-            <button>Accept</button>
-        </div>
-        <div class="col-lg-9">
-            <h2>{{dstro.name}}</h2>
-        </div>
+<div class="container_nav">
+  <div class="container_nav_tittle">
+    <div class="container_nav_tittle_body">
+      <h2 id="style_main">TÌM NHANH DỄ DÀNG</h2>
+      <p id="style_sub">Home.com - Trang thông tin tra cứu và cho thuê phòng trọ đơn giản</p>
     </div>
+  </div>
+  <div class="container_nav_block_outer">
+    <div class="container_nav_block_inner">
+      <div class="container_nav_search_task">
+        <form action="" class="container_nav_search_task_table">
+          <input class="container_nav_search" type="text" placeholder="Tìm kiếm" id="search">
+          <button class="container_nav_btn_submit">
+            <i class='bx bx-search-alt-2'></i>
+        </form>
+
+      </div>
+
+      <div class="container_nav_options">
+        <ul class="container_nav_options_select">
+          <div class="option">
+            <button class="option_location" href="">
+              Địa điểm
+              <i class='bx bx-chevron-down'></i>
+            </button>
+
+            <div class="option_location_list_nocart">
+              <div class="option_location_list_nocart_body">
+                <select name="Phường" id="ward" class="option_select"></select>
+
+                <select name="Đường" id="street" class="option_select"></select>
+
+                <select name="Vị trí" id="location" class="option_select"></select>
+              </div>
+
+              <div class="option_location_list_action">
+                <div class="option_location_list_action_btn">
+                  <a href="" class="option_price_list_action_btn_element">Tìm ngay</a>
+                </div>
+                <div class="option_location_list_action_btn">
+                  <a href="" class="option_price_list_action_btn_element">Đóng</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+          <div class="option">
+            <button class="option_price">
+              Giá <i class='bx bx-chevron-down'></i>
+            </button>
+
+            <div class="option_price_list_nocart">
+              <div class="option_price_list_nocart_body">
+                <ul>
+                  <li class="price_list"> Tất cả</li>
+                  <li class="price_list"> Dưới 1 triệu</li>
+                  <li class="price_list"> 1 triệu - 2 triệu</li>
+                  <li class="price_list"> 2 triệu - 3 triệu</li>
+                  <li class="price_list"> 3 triệu - 4 triệu</li>
+                  <li class="price_list"> 4 triệu - 5 triệu</li>
+                  <li class="price_list"> 5 triệu - 6 triệu</li>
+                  <li class="price_list"> Trên 6 triệu</li>
+                </ul>
+              </div>
+              <div class="option_price_list_action">
+                <div class="option_price_list_action_btn">
+                  <a href="" class="option_price_list_action_btn_element">Tìm ngay</a>
+                </div>
+                <div class="option_price_list_action_btn">
+                  <a href="" class="option_price_list_action_btn_element">Đóng</a>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+          </div>
+          <div class="option">
+            <button class="option_search" href="">Tìm kiếm</button>
+          </div>
+
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
+
+
+<div class="container_item">
+
+  <!-- Them cac muc san pham  -->
+
+  <div class="container_item_products">
+
+    <ul class="container_item_btn_head">
+      <span id="container_item_btn_head_p">Sắp xếp: </span>
+      <div class="container_item_btn_head_1">
+        <a class="container_item_btn_head_1_1 " href="">Mặc định</a>
+      </div>
+      <div class="container_item_btn_head_1">
+        <a class="container_item_btn_head_1_1" href="">Mới nhất</a>
+      </div>
+
+    </ul>
+
+
+
+
+    <div class="container_item_list_product">
+      <div class="container_item_product">
+        {{#each dstro}}
+        <div class="container_item_product_detail">
+
+          <figure class="container_item_product_detail_post_image">
+            <a href="">
+              <img class="container_item_product_img" src="/src/public/img/{{this.image}}" alt="">
+            </a>
+            <div class="container_item_product_detail_post_image_quantity">
+              <span class="container_item_product_detail_post_image_quantity_detail">1 ảnh</span>
+            </div>
+          </figure>
+
+
+
+
+
+          <div class="container_item_product_detail_post_meta">
+
+
+            <h3 class="container_item_product_detail_post_info_name">
+              <a class="post_info_name_detail" href="">
+                <p>{{this.name}}</p>
+              </a>
+
+            </h3>
+            <div class="container_item_product_detail_post_info_price_acreage_add">
+              <span class="post_info_price">4 triệu/tháng</span>
+              <span class="post_info_acreage">{{this.acreage}}m²</span>
+              <span class="post_info_add">{{this.add}}</span>
+            </div>
+
+            <div class="container_item_product_detail_info_describe">
+              <span>Thông tin chi tiết</span>
+            </div>
+
+            <div class="container_item_product_detail_post_mes">
+              <div class="container_item_product_detail_post_mes_logo">
+                <div class="container_item_product_detail_post_mes_logo_author">
+                  <i class='bx bx-user-circle'></i>
+                </div>
+                <p class="post_user">{{this.user}}</p>
+              </div>
+              <div class="container_item_product_detail_post_mes_tel">
+                <button class="container_item_product_detail_post_mes_tel_1">Nhắn
+                  tin</button>
+                <button class="container_item_product_detail_post_mes_tel_1">Gọi
+                  điện</button>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+
+
+    <div class="model">
+      <div class="background"></div>
+
+      <div class="container1">
+
+        <div class="content">
+          <h2 class="logo"><i class='bx bxl-firebase'></i>Nhóm 4</h2>
+
+          <div class="text-sci">
+            <h2>Chào mừng!<br><span>Đến Với Timtrotot</span></h2>
+
+            <p>Tại đây các bạn có thể tìm thấy những nơi ở phù hợp với nhu cầu và túi tiền của mỗi người. Hy vọng
+              chúng tôi có thể giúp các bạn tìm được những căn phòng tốt nhất.</p>
+
+            <div class="social-icons">
+              <a href="#"><i class='bx bxl-linkedin'></i></a>
+              <a href="#"><i class='bx bxl-facebook'></i></a>
+              <a href="#"><i class='bx bxl-instagram'></i></a>
+              <a href="#"><i class='bx bxl-gmail'></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tạo 1 cái logreg-box để làm cái khung chung cho form-box login và form-box register -->
+        <div class="logreg-box">
+          <div class="form-box login">
+            <form action="#">
+              <h2>Đăng nhập</h2>
+
+
+              <div class="input-box">
+                <span class="icon"><i class='bx bxs-phone-call'></i></span>
+                <input type="text" required>
+                <label>SĐT</label>
+              </div>
+
+              <div class="input-box">
+                <span class="icon">
+                  <i class='bx bxs-lock-alt'></i>
+                </span>
+                <input type="password" required>
+                <label>Mật khẩu</label>
+              </div>
+
+              <div class="remember-forgot">
+                <label><input type="checkbox">Ghi nhớ đăng nhập</label>
+                <a href="#">Quên mật khẩu?</a>
+              </div>
+
+              <button type="submit" class="btn1">Đăng nhập</button>
+
+              <div class="login-register">
+                <p>Bạn chưa có tài khoản? <a href="#" class="register-link">Đăng ký</a></p>
+              </div>
+              <div class="login-register-exit">
+                <p><a href="/">Trở lại</a> </p>
+              </div>
+            </form>
+          </div>
+
+          <div class="form-box register">
+            <form action="#">
+              <h2>Đăng ký</h2>
+
+              <div class="input-box">
+                <span class="icon"><i class='bx bxs-user'></i></span>
+                <input type="text" required>
+                <label>Tên</label>
+              </div>
+
+              <div class="input-box">
+                <span class="icon"><i class='bx bxs-phone-call'></i></span>
+                <input type="text" required>
+                <label>SĐT</label>
+              </div>
+
+              <div class="input-box">
+                <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                <input id="password" type="password" required>
+                <label>Mật khẩu</label>
+              </div>
+
+
+              <div class="remember-forgot">
+                <label><input type="checkbox">Tôi đồng ý với những điều khoản & điều kiện</label>
+              </div>
+
+
+              <button type="submit" class="btn1">Đăng ký</button>
+
+              <div class="login-register">
+                <p>Bạn đã có tài khoản? <a href="#" class="login-link">Đăng nhập</a></p>
+              </div>
+
+              <div class="login-register-exit">
+                <p><a href="/">Trở lại</a> </p>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <script src="/src/public/js/script.js"></script>
+    </div>
+
+
+
+
+    <div class="container_item_btn">
+      <ul>
+        <li class="container_item_btn_item">
+          <a class="container_item_btn_item_tittle" href="/">« Trang trước </a>
+        </li>
+        <li class="container_item_btn_item">
+          <a class="container_item_btn_item_tittle" href="/">1</a>
+        </li>
+        <li class="container_item_btn_item">
+          <a class="container_item_btn_item_tittle" href="/?page=2">2</a>
+        </li>
+        <li class="container_item_btn_item">
+          <a class="container_item_btn_item_tittle" href="/?page=3">3</a>
+        </li>
+        <li class="container_item_btn_item">
+          <a class="container_item_btn_item_tittle" href="/?page=4">4</a>
+        </li>
+        <li class="container_item_btn_item">
+          <a class="container_item_btn_item_tittle" href="">...</a>
+        </li>
+        <li class="container_item_btn_item">
+          <a class="container_item_btn_item_tittle" href="">»»</a>
+        </li>
+        <li class="container_item_btn_item">
+          <a class="container_item_btn_item_tittle" href="">Trang sau »</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+
+  <!-- Them cac muc lua chon khac -->
+  <div class="container_item_other">
+    <div class="container_item_other_screen_price">
+      <h3>Tìm kiếm theo giá</h3>
+
+
+    </div>
+
+    <section class="container_item_other_screen_hot_news">
+      <span id="container_item_header">Tin mới đăng</span>
+      <div class="container_item_other_screen_hot_news_list">
+        <ul class="container_item_other_screen_hot_news_list_pro">
+
+
+          <li class="container_item_other_screen_hot_news_list">
+            <div class="container_item_other_screen_hot_news_list_sub">
+              <div class="container_item_other_hot_news_pic">
+                img
+              </div>
+              <div class="container_item_other_hot_news_info">
+                <div class="post_tittle">TITLE</div>
+                <div class="post_dav">
+                  <span class="post_price">TITLE</span>
+                  <span class="post_time">TITLE</span>
+                </div>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+  </div>

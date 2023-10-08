@@ -1,0 +1,71 @@
+<div class="container-fluid">
+    <div class="row">
+        <nav class="sidebar">
+            <div class="user_info">
+                <a href="#">
+                    <div class="user_avatar"><img src="/src/public/img/account.png" width="200" height="200"></div>
+                    <div class="user">
+                        <div class="inner">
+                            <div class="user_name">Name</div>
+                            <div class="user_verify" style="color: #555; font-size: 0.9rem;">XXXXXXXXXXX</div>
+                        </div>
+                    </div>
+                </a>
+                <ul>
+                    <li><span>Mã thành viên:</span> <span style="font-weight: 700;"> XXXXXX</span></li>
+                    <li><span>TK Chính:</span> <span style="font-weight: 700;"> XXXXXX</span></li>
+                </ul>
+                <a class="btn-danger" href="#">Đăng tin</a>
+            </div>
+            <ul class="nav-nav-sidebar">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class=material-icons>description</i>
+                        Quản lý tin đăng
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class=material-icons>edit</i>
+                        Sửa thông tin cá nhân
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class=material-icons>lock</i>
+                        Đổi mật khẩu
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class=material-icons>call</i>
+                        Liên hệ
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">
+                        <i class=material-icons>logout</i>
+                        Thoát
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+
+        <a class="btn btn-danger" href="#"> Đăng tin mới</a>
+
+        <div class="list-group">
+            <a class="list-group-item" href="#"><i class=material-icons>description</i>Quản lý tin đăng</a>
+            <a class="list-group-item" href="#"><i class=material-icons>edit</i>Sửa thông tin cá nhân</a>
+            <a class="list-group-item" href="#"><i class=material-icons>call</i>Đổi số điện thoại</a>
+            <a class="list-group-item" href="#"><i class=material-icons>lock</i>Đổi mật khẩu</a>
+            <a class="list-group-item" href="#"><i class=material-icons>logout</i>Đăng xuất</a>
+        </div>
+
+        <br><br>
+
+    </div>
+    {{> login}}
+</div>

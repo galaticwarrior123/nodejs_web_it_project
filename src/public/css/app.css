@@ -45,13 +45,13 @@ body {
 .header_n2_btn {
   text-decoration: none;
   color: #fff;
-  background-image: linear-gradient(0, #4fabd2, #285bb5);
+  background-image: linear-gradient(45deg, #add8df, #132276);
   padding: 10px 5px;
   border-radius: 10px;
   font-weight: 500; }
 
 .header_n2_btn:hover {
-  text-decoration: underline; }
+  background-image: linear-gradient(-45deg, #132276, #add8df); }
 
 .logo img {
   width: 65px;
@@ -296,7 +296,7 @@ body {
   color: #f4f4f4; }
 
 .container_item_btn_head_1_1:hover {
-  text-decoration: underline #110b0b; }
+  background-image: linear-gradient(180deg, #1a5fa4, #93d0ea); }
 
 .container_item_products {
   border-radius: 5px;
@@ -396,12 +396,17 @@ img {
 
 .container_item_product_detail_post_mes_tel {
   display: flex;
-  flex-direction: column; }
+  flex-direction: row; }
 
 .container_item_product_detail_post_mes_tel_1 {
   border-radius: 5px;
-  margin: 2px 1px 2px 0;
-  cursor: pointer; }
+  margin: 10px 10px 10px 0;
+  cursor: pointer;
+  background-image: linear-gradient(45deg, #d14677, #d2af31);
+  color: #fff; }
+
+.container_item_product_detail_post_mes_tel_1:hover {
+  background-image: linear-gradient(-45deg, #3faeae, #2db467); }
 
 .container_item_product_detail_title_info {
   font-siZe: 10px;
@@ -437,8 +442,9 @@ img {
 .container_item_other_screen_hot_news {
   width: 100%;
   height: 800px;
-  background-color: #f3f1e6;
-  border-radius: 5px; }
+  background-image: linear-gradient(45deg, #e6ecee, #7ddac7);
+  border-radius: 5px;
+  margin-top: 5rem; }
 
 #container_item_header {
   font-size: 20px;
@@ -449,8 +455,7 @@ img {
   list-style: none; }
 
 .container_item_other_screen_hot_news_list {
-  margin: 2px 0;
-  border-top: 2px solid black; }
+  margin-right: 15px; }
 
 .container_item_other_screen_hot_news_list_sub {
   display: flex;

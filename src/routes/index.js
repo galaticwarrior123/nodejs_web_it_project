@@ -1,7 +1,7 @@
 const newsRouter = require('./news');
 const siteRouter = require('./site');
 const troRouter=require('./dstro')
-const loginRouter=require('./log_in')
+const createRouter=require('./create')
 function routes(app) {
     // app.get('/', (req, res) => {
     //     res.render('home');
@@ -10,7 +10,7 @@ function routes(app) {
     //   app.get('/news', (req, res) => {
     //     res.render('news');
     //   })
-    app.use('/login', loginRouter);
+    app.use('/create',createRouter)
     app.use('/page', troRouter);
     app.use('/news', newsRouter);
     app.use('/', siteRouter);

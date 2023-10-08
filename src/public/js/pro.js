@@ -27,7 +27,7 @@ area.addEventListener('click', () => {
     if(locate_list.style.display == 'none'){
         locate_list.style.display = 'block';
         if(price_list.style.display == 'block'){
-            lg1.style.display = 'none';
+            price_list.style.display = 'none';
         }
     }
     else{
@@ -38,14 +38,14 @@ area.addEventListener('click', () => {
 
 
 price.addEventListener('click', () => {
-    if(lg1.style.display == 'none'){
-        lg1.style.display = 'block';
+    if(price_list.style.display == 'none'){
+        price_list.style.display = 'block';
         if(locate_list.style.display == 'block'){
             locate_list.style.display = 'none';
         }
     }
     else{
-        lg1.style.display = 'none';
+        price_list.style.display = 'none';
     }
 });
 
