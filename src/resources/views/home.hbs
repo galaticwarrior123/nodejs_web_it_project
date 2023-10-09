@@ -70,7 +70,7 @@
                   <a href="" class="option_price_list_action_btn_element">Tìm ngay</a>
                 </div>
                 <div class="option_price_list_action_btn">
-                  <a href="" class="option_price_list_action_btn_element">Đóng</a>
+                  <a href="#" class="option_price_list_action_btn_element">Đóng</a>
                 </div>
               </div>
             </div>
@@ -117,7 +117,7 @@
         <div class="container_item_product_detail">
 
           <figure class="container_item_product_detail_post_image">
-            <a href="">
+            <a href="detail/show/{{this.slug}}">
               <img class="container_item_product_img" src="/src/public/img/{{this.image}}" alt="">
             </a>
             <div class="container_item_product_detail_post_image_quantity">
@@ -133,7 +133,7 @@
 
 
             <h3 class="container_item_product_detail_post_info_name">
-              <a class="post_info_name_detail" href="">
+              <a class="post_info_name_detail" href="detail/show/{{this.slug}}">
                 <p>{{this.name}}</p>
               </a>
 
@@ -223,9 +223,14 @@
 
           <li class="container_item_other_screen_hot_news_list">
             <div class="container_item_other_screen_hot_news_list_sub">
-              <img class="container_item_other_hot_news_pic" src="/src/public/img/{{this.image}}"></img>
+              <a href="detail/show/{{this.slug}}">
+                <img class="container_item_other_hot_news_pic" src="/src/public/img/{{this.image}}"></img>
+              </a>
+              
               <div class="container_item_other_hot_news_info">
-                <div class="post_tittle">abc</div>
+                <a href="detail/show">
+                  <div class="post_tittle">abc</div>
+                </a>
                 <div class="post_dav">
                   <span class="post_price">4 triệu/tháng</span>
                   <span class="post_time">1 giờ trước </span>
