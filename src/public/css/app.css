@@ -25,8 +25,19 @@ body {
 .header_n2 {
   display: inline-flex;
   font-size: 18px;
-  margin: 0 5px 0 5px;
+  margin: 0 3px 0 3px;
   cursor: pointer; }
+
+.header_nav {
+  margin: 25px 0 0 70px; }
+
+.nav-link {
+  color: #282f2c;
+  font-weight: 600;
+  font-family: sans-serif; }
+
+.nav-link:hover {
+  color: #6dc7f8; }
 
 .header_n2_link {
   display: inline-flex;
@@ -60,7 +71,7 @@ body {
 
 .logo {
   position: relative;
-  left: 200px;
+  left: 180px;
   display: flex;
   flex-direction: column; }
 
@@ -461,7 +472,8 @@ img {
   display: flex;
   flex-direction: row;
   margin: 3px 0;
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: rgba(201, 193, 83, 0.2); }
 
 .container_item_other_hot_news_pic {
   width: 60px;
@@ -472,7 +484,6 @@ img {
   margin-left: 10px;
   width: 200px;
   height: 60px;
-  background-color: antiquewhite;
   display: flex;
   flex-direction: column; }
 
@@ -481,7 +492,8 @@ img {
   line-height: 2.3; }
 
 .post_price {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  color: #2d00f3; }
 
 .post_dav {
   display: flex;

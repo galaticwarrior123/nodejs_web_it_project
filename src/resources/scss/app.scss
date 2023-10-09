@@ -27,17 +27,23 @@ body{
 .header_n2{
     display:inline-flex;
     font-size: 18px;
-    margin: 0 5px 0 5px;
+    margin: 0 3px 0 3px;
     cursor: pointer;
 }
-// .header_login{
-//     width:125px;
-//     height:20px;
-// }
-// .header_signup{
-//     width:125px;
-//     height:20px;
-// }
+
+.header_nav{
+    margin:25px 0 0 70px;
+    
+}
+.nav-link{
+    color: rgb(40, 47, 44);
+    font-weight: 600;
+    font-family:sans-serif;
+}
+.nav-link:hover{
+    color: rgb(109, 199, 248);
+}
+
 .header_n2_link{
     display:inline-flex;
     padding:3px 0px;
@@ -72,7 +78,7 @@ body{
 }
 .logo{
     position: relative;
-    left:200px;
+    left:180px;
     display:flex;
     flex-direction: column;
 }
@@ -567,6 +573,7 @@ img{
     flex-direction: row;
     margin: 3px 0;
     cursor:pointer;
+    background-color: rgba(201, 193, 83, 0.2)
 }
 
 .container_item_other_hot_news_pic{
@@ -579,7 +586,6 @@ img{
     margin-left: 10px;
     width:200px;
     height:60px ;
-    background-color: antiquewhite;
     display: flex;
     flex-direction: column;
 }
@@ -589,6 +595,7 @@ img{
 }
 .post_price{
     margin-bottom: 0;
+    color:rgb(45, 0, 243)
 }
 .post_dav{
     display: flex;
