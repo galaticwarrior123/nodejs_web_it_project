@@ -475,7 +475,6 @@ img {
   display: flex;
   flex-direction: row;
   margin: 3px 0;
-  cursor: pointer;
   background-color: rgba(201, 193, 83, 0.2); }
 
 .container_item_other_hot_news_pic {
