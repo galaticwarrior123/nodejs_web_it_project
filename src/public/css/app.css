@@ -367,6 +367,9 @@ img {
 .post_info_name_detail {
   text-decoration: none; }
 
+.post_info_name_detail:hover {
+  color: #dc5f46; }
+
 .container_item_product_detail_post_info_price_acreage_add {
   display: inline-flex;
   justify-content: space-around;
@@ -490,6 +493,9 @@ img {
 .post_tittle {
   padding: 0;
   line-height: 2.3; }
+
+.post_tittle:hover {
+  color: #dc5f46; }
 
 .post_price {
   margin-bottom: 0;
