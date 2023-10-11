@@ -3,7 +3,7 @@ area = document.querySelector('.option_location');
 price_list = document.querySelector('.option_price_list_nocart');
 price = document.querySelector('.option_price');
 
-login=document.querySelector(".model");
+btn=document.querySelector(".btn1");
 
 btn_login=document.querySelector(".header_login");
 btn_signup=document.querySelector(".header_signup");
@@ -12,15 +12,6 @@ btn_signup=document.querySelector(".header_signup");
 form_login=document.querySelector(".form-box login");
 form_signup=document.querySelector(".form-box register");
 
-btn_login.addEventListener('click', () => {
-    login.style.display="block";
-    
-});
-
-btn_signup.addEventListener('click', () => {
-    login.style.display="block";
-    
-});
 
 
 area.addEventListener('click', () => {
@@ -48,10 +39,6 @@ price.addEventListener('click', () => {
         price_list.style.display = 'none';
     }
 });
-
-
-
-
 
 
 

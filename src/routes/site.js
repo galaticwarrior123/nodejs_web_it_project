@@ -3,9 +3,11 @@ const router = express.Router();
 
 const siteController = require('../app/controllers/SiteController');
 
+
 // newsController.index;
-router.get('/:slug', siteController.index2);
+// router.get('/:slug', wardController.show);
 router.get('/', siteController.index1);
+
 
 
 

@@ -11,7 +11,9 @@ body{
     right:0;
     text-align: center;
     background-color: #a7e5e6;
+    display: block;
 }
+
 .header_container{
     position:relative;
     height:100%;
@@ -30,11 +32,12 @@ body{
     margin: 0 3px 0 3px;
     cursor: pointer;
 }
-
-.header_nav{
-    margin:25px 0 0 70px;
-    
+.header_nav_list{
+    position: absolute;
+    top:10px;
+    left:220px;
 }
+// .header_nav{}
 .nav-link{
     color: rgb(40, 47, 44);
     font-weight: 600;
@@ -95,8 +98,15 @@ body{
 }
 
 
-
-
+.header_signup{
+    display:block;
+}
+.header_login{
+    display:block;
+}
+.header_n2_icon{
+    display:none;
+}
 
 
 
@@ -109,13 +119,13 @@ body{
     
 
 }
-.container::before {
-    display: table;
-    content:"";
-    line-height: 0;
-    clear:both;
+// .container::before {
+//     display: table;
+//     content:"";
+//     line-height: 0;
+//     clear:both;
 
-}
+// }
 .container_nav {
     height:400px;
     background-size: cover;
@@ -373,7 +383,6 @@ body{
     height:100%;
     width:750px;
     margin-right: 100px;
-    
     
 }
 

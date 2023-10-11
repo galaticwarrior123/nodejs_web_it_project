@@ -26,7 +26,13 @@
 
             <div class="option_location_list_nocart">
               <div class="option_location_list_nocart_body">
-                <select name="Phường" id="ward" class="option_select"></select>
+                <select  class="option_select">
+                  
+                  <option value="">Phường 1</option>
+                  <option value="">Phường 2</option>
+                  <option value="">Phường 3</option>
+                  <option value="">Phường 4</option>
+                </select>
 
                 <select name="Đường" id="street" class="option_select"></select>
 
@@ -167,11 +173,11 @@
           </div>
         </div>
         {{/each}}
+        
       </div>
     </div>
 
 
-    {{> login}}
     
     <div class="container_item_btn">
       <ul>
@@ -194,7 +200,7 @@
           <a class="container_item_btn_item_tittle" href="">...</a>
         </li>
         <li class="container_item_btn_item">
-          <a class="container_item_btn_item_tittle" href="">»»</a>
+          <a class="container_item_btn_item_tittle" href="/?page={{totalPage}}">{{totalPage}}</a>
         </li>
         <li class="container_item_btn_item">
           <a class="container_item_btn_item_tittle" href="">Trang sau »</a>

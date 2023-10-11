@@ -9,7 +9,8 @@ body {
   left: 0;
   right: 0;
   text-align: center;
-  background-color: #a7e5e6; }
+  background-color: #a7e5e6;
+  display: block; }
 
 .header_container {
   position: relative;
@@ -28,8 +29,10 @@ body {
   margin: 0 3px 0 3px;
   cursor: pointer; }
 
-.header_nav {
-  margin: 25px 0 0 70px; }
+.header_nav_list {
+  position: absolute;
+  top: 10px;
+  left: 220px; }
 
 .nav-link {
   color: #282f2c;
@@ -86,17 +89,20 @@ body {
   margin-right: 3px;
   margin-top: 1px; }
 
+.header_signup {
+  display: block; }
+
+.header_login {
+  display: block; }
+
+.header_n2_icon {
+  display: none; }
+
 .container {
   text-align: center;
   background-image: url(/it_project/src/public/img/anhnen.jpg);
   background-size: cover;
   margin-top: 80px; }
-
-.container::before {
-  display: table;
-  content: "";
-  line-height: 0;
-  clear: both; }
 
 .container_nav {
   height: 400px;
