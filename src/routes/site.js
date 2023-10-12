@@ -5,7 +5,7 @@ const siteController = require('../app/controllers/SiteController');
 
 
 // newsController.index;
-// router.get('/:slug', wardController.show);
+// router.get('/:slug', siteController.show);
 router.get('/', siteController.index1);
 
 

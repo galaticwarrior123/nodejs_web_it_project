@@ -26,8 +26,8 @@
 
             <div class="option_location_list_nocart">
               <div class="option_location_list_nocart_body">
-                <select  class="option_select">
-                  
+                <select class="option_select">
+
                   <option value="">Phường 1</option>
                   <option value="">Phường 2</option>
                   <option value="">Phường 3</option>
@@ -120,92 +120,79 @@
     <div class="container_item_list_product">
       <div class="container_item_product">
         {{#each dstro}}
-        <div class="container_item_product_detail">
+        <div class="container_item_product_info">
+          <div class="container_item_product_detail">
 
-          <figure class="container_item_product_detail_post_image">
-            <a href="detail/show/{{this.slug}}">
-              <img class="container_item_product_img" src="/src/public/img/{{this.image}}" alt="">
-            </a>
-            <div class="container_item_product_detail_post_image_quantity">
-              <span class="container_item_product_detail_post_image_quantity_detail">1 ảnh</span>
-            </div>
-          </figure>
-
-
-
-
-
-          <div class="container_item_product_detail_post_meta">
-
-
-            <h3 class="container_item_product_detail_post_info_name">
-              <a class="post_info_name_detail" href="detail/show/{{this.slug}}">
-                <p>{{this.name}}</p>
+            <figure class="container_item_product_detail_post_image">
+              <a href="detail/show/{{this.slug}}">
+                <img class="container_item_product_img" src="/src/public/img/{{this.image}}" alt="">
               </a>
+              <div class="container_item_product_detail_post_image_quantity">
+                <span class="container_item_product_detail_post_image_quantity_detail">1 ảnh</span>
+              </div>
+            </figure>
 
-            </h3>
-            <div class="container_item_product_detail_post_info_price_acreage_add">
-              <span class="post_info_price">4 triệu/tháng</span>
-              <span class="post_info_acreage">{{this.acreage}}m²</span>
-              <span class="post_info_add">{{this.add}}</span>
-            </div>
 
-            <div class="container_item_product_detail_info_describe">
-              <span>Thông tin chi tiết</span>
-            </div>
 
-            <div class="container_item_product_detail_post_mes">
-              <div class="container_item_product_detail_post_mes_logo">
-                <div class="container_item_product_detail_post_mes_logo_author">
-                  <i class='bx bx-user-circle'></i>
+
+
+            <div class="container_item_product_detail_post_meta">
+
+
+              <h3 class="container_item_product_detail_post_info_name">
+                <a class="post_info_name_detail" href="detail/show/{{this.slug}}">
+                  <p>{{this.name}}</p>
+                </a>
+
+              </h3>
+              <div class="container_item_product_detail_post_info_price_acreage_add">
+                <span class="post_info_price">4 triệu/tháng</span>
+                <span class="post_info_acreage">{{this.acreage}}m²</span>
+                <span class="post_info_add">{{this.add}}</span>
+              </div>
+
+              <div class="container_item_product_detail_info_describe">
+                <span>Thông tin chi tiết</span>
+              </div>
+
+              <div class="container_item_product_detail_post_mes">
+                <div class="container_item_product_detail_post_mes_logo">
+                  <div class="container_item_product_detail_post_mes_logo_author">
+                    <i class='bx bx-user-circle'></i>
+                  </div>
+                  <p class="post_user">{{this.user}}</p>
                 </div>
-                <p class="post_user">{{this.user}}</p>
+                <div class="container_item_product_detail_post_mes_tel">
+                  <button class="container_item_product_detail_post_mes_tel_1">Nhắn
+                    tin</button>
+                  <button class="container_item_product_detail_post_mes_tel_1">Gọi
+                    điện</button>
+                </div>
               </div>
-              <div class="container_item_product_detail_post_mes_tel">
-                <button class="container_item_product_detail_post_mes_tel_1">Nhắn
-                  tin</button>
-                <button class="container_item_product_detail_post_mes_tel_1">Gọi
-                  điện</button>
-              </div>
+
+
             </div>
-
-
           </div>
         </div>
         {{/each}}
-        
+
       </div>
     </div>
 
 
-    
+
     <div class="container_item_btn">
-      <ul>
-        <li class="container_item_btn_item">
-          <a class="container_item_btn_item_tittle" href="/">« Trang trước </a>
-        </li>
-        <li class="container_item_btn_item">
-          <a class="container_item_btn_item_tittle" href="/">1</a>
-        </li>
-        <li class="container_item_btn_item">
-          <a class="container_item_btn_item_tittle" href="/?page=2">2</a>
-        </li>
-        <li class="container_item_btn_item">
-          <a class="container_item_btn_item_tittle" href="/?page=3">3</a>
-        </li>
-        <li class="container_item_btn_item">
-          <a class="container_item_btn_item_tittle" href="/?page=4">4</a>
-        </li>
-        <li class="container_item_btn_item">
-          <a class="container_item_btn_item_tittle" href="">...</a>
-        </li>
-        <li class="container_item_btn_item">
-          <a class="container_item_btn_item_tittle" href="/?page={{totalPage}}">{{totalPage}}</a>
-        </li>
-        <li class="container_item_btn_item">
-          <a class="container_item_btn_item_tittle" href="">Trang sau »</a>
-        </li>
+      <div class="container_item_btn_item_btn">
+        <button class="container_item_btn_item_btn_prev">« Trang trước </button>
+      </div>
+    
+      <ul class="container_item_btn_listPage">
+        <li class="container_item_btn_item hightLight"></li>
+        
       </ul>
+      <div class="container_item_btn_item_btn">
+        <button class="container_item_btn_item_btn_next" >Trang sau »</button>
+      </div>
     </div>
 
   </div>
@@ -213,12 +200,7 @@
 
   <!-- Them cac muc lua chon khac -->
   <div class="container_item_other">
-    <div class="container_item_other_screen_price">
-      <h3>Tìm kiếm theo giá</h3>
-
-
-    </div>
-
+    
     <section class="container_item_other_screen_hot_news">
       <span id="container_item_header">Tin mới đăng</span>
 
@@ -232,13 +214,13 @@
               <a href="detail/show/{{this.slug}}">
                 <img class="container_item_other_hot_news_pic" src="/src/public/img/{{this.image}}"></img>
               </a>
-              
+
               <div class="container_item_other_hot_news_info">
-                
+
                 <div class="post_tittle">
                   <a href="detail/show/{{this.slug}}">abc</a>
                 </div>
-                
+
                 <div class="post_dav">
                   <span class="post_price">4 triệu/tháng</span>
                   <span class="post_time">1 giờ trước </span>
