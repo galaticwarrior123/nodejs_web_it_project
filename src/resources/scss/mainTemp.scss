@@ -40,7 +40,7 @@
   }
   
   .container-fluid{
-    height: 650px;
+    height: 1000px;
     width:100%;
   }
   
@@ -53,7 +53,7 @@
     background-color: rgb(245, 240, 231);
     border-right: 1px solid #e6e6e6;
     border-bottom: 1px solid #e6e6e6;
-    height: 100%;
+    height: 960px;
     float: left;
   }
   
@@ -101,12 +101,13 @@
   }
   
   .main {
-      padding-top: 10px;
-      padding-left: 20rem;
-      padding-right: 3rem;
-      padding-bottom: 4rem;
-      color: #e6e6e6;
+    padding-top: 40px;
+    padding-left: 25rem;
+    padding-right: 5rem;
+    padding-bottom: 4rem;
+    color: #e6e6e6;
   }
+
 //   *, ::after, ::before {
 //     box-sizing: border-box;
 //   }
@@ -146,4 +147,76 @@
   }
   .btn-danger:hover {
     background-color: rgb(125, 12, 12);
+  }
+
+
+
+  .create_body{
+    width: 100%;
+    height: 700px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  .create_form{
+    width: 70%;
+    height: 100%;
+    background-color: #d6c756;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left:15%;
+     
+  }
+  .create_form_title{
+    color:#000;
+    font-family: 'Be VietNam Pro', sans-serif;
+  }
+
+  .create_form_body_item {
+    display: flex;
+  }
+
+  .create_form_body_item label{
+    color:#000;
+    font-family: 'Be VietNam Pro', sans-serif;
+    width:140px;
+    text-align: left;
+    margin-bottom: 1px ;
+    position: relative;
+    bottom:10px;
+    
+  }
+  .create_form_body_item input{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    padding: 5px;
+    box-sizing: border-box;
+
+  }
+  
+  .create_form_body_detail{
+    line-height:3 ;
+  }
+
+  .create_form_body_item select{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    padding: 5px;
+    box-sizing: border-box;
+    
+  }
+  .create_form_body_item textarea{
+    
+    border-radius: 10px;
+    border: 1px solid #fff;
+    padding: 5px;
+    
+    
   }

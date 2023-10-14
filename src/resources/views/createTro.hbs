@@ -15,7 +15,7 @@
                     <li><span>Mã thành viên:</span> <span style="font-weight: 700;"> XXXXXX</span></li>
                     <li><span>TK Chính:</span> <span style="font-weight: 700;"> XXXXXX</span></li>
                 </ul>
-                <a class="btn-danger" href="#">Đăng tin</a>
+                
             </div>
             <ul class="nav-nav-sidebar">
 
@@ -54,18 +54,55 @@
     </div>
     <div class="main">
 
-        <a class="btn btn-danger" href="#"> Đăng tin mới</a>
+        <div class="create_body">
+            <div class="create_form">
+                <form action="" class="create_form_body" method="post">
+                    <div class="create_form_title" >
+                        <h2 style="margin-top: 0">Đăng tin</h2>
+                    </div>
+                    <div class="create_form_body_detail">
+                        <div class="create_form_body_item">
+                            <label for="name">Tiêu đề</label>
+                            <input type="text" name="name" id="name" placeholder="Nhập tiêu đề">
+                        </div>
+                        <div class="create_form_body_item">
+                            <label for="add">Địa chỉ</label>
+                            <input type="text" name="add" id="add" placeholder="Nhập địa chỉ">
+                        </div>
+                        <div class="create_form_body_item">
+                            <label for="acreage">Diện tích</label>
+                            <input type="text" name="acreage" id="acreage" placeholder="Nhập diện tích">
+                        </div>
+                        <div class="create_form_body_item">
+                            <label for="price">Giá</label>
+                            <input type="text" name="price" id="price" placeholder="Nhập giá">
+                        </div>
+                        <div class="create_form_body_item">
+                            <label for="phone">Số điện thoại</label>
+                            <input type="text" name="phone" id="phone" placeholder="Nhập số điện thoại">
+                        </div>
+                        <div class="create_form_body_item">
+                            <label for="image">Hình ảnh</label>
+                            <input type="file" name="image" id="image" placeholder="Chọn hình ảnh">
+                        </div>
+                        <div class="create_form_body_item">
+                            <label for="description">Mô tả</label>
+                            <textarea name="description" id="description" cols="65" rows="10"
+                                placeholder="Nhập mô tả"></textarea>
+                        </div>
+                        <div class="create_form_body_item " style="margin-top:10px">
+                            <label for="category">Loại tin</label>
+                            <select name="category" id="category">
+                                <option value="1">Cho thuê phòng trọ</option>
+                                <option value="2">Cho thuê nhà nguyên căn</option>
+                                <option value="3">Cho thuê chung cư mini</option>
+                            </select>
+                        </div>
+                        <a class="btn-danger" href="#">Đăng tin</a>
+                </form>
+            </div>
 
-        <div class="list-group">
-            <a class="list-group-item" href="#"><i class=material-icons>description</i>Quản lý tin đăng</a>
-            <a class="list-group-item" href="#"><i class=material-icons>edit</i>Sửa thông tin cá nhân</a>
-            <a class="list-group-item" href="#"><i class=material-icons>call</i>Đổi số điện thoại</a>
-            <a class="list-group-item" href="#"><i class=material-icons>lock</i>Đổi mật khẩu</a>
-            <a class="list-group-item" href="#"><i class=material-icons>logout</i>Đăng xuất</a>
         </div>
-
-        <br><br>
 
     </div>
 </div>
-
