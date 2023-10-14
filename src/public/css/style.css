@@ -4,7 +4,8 @@
   left: 0;
   width: 100%;
   bottom: 0;
-  background-color: #dbb1b1; }
+  background-color: #dbb1b1;
+  z-index: 101; }
 
 .background {
   width: 100%;

@@ -48,7 +48,7 @@ price.addEventListener('click', () => {
 let thisPage = 1;
 let limit = 6;
 let list = document.querySelectorAll('.container_item_product_info');
-console.log(list);
+
 
 function loadPage() {
     let beginGet = limit * (thisPage - 1);
@@ -68,15 +68,13 @@ function listPage() {
     let count = Math.ceil(list.length / limit);
     document.querySelector(".container_item_btn_listPage").innerHTML = "";
 
-    prev = document.querySelector(".container_item_btn_item_btn_prev");
-    prev.addEventListener('click', () => {
-        if (thisPage != 1) {
-            changePage(thisPage - 1);
-        }
-        else {
-            changePage(thisPage);
-        }
-    })
+    if(thisPage !=1){
+        let prev= document.createElement("li");
+        prev.innerText = "Trang trước";
+        prev.classList.add("container_item_btn_item");
+        prev.setAttribute("onclick", "changePage(" + (thisPage - 1) + ")");
+        document.querySelector(".container_item_btn_listPage").appendChild(prev);
+    }
     
     for (i = 1; i <= count; i++) {
         let newPage = document.createElement("li");
@@ -90,15 +88,16 @@ function listPage() {
         document.querySelector(".container_item_btn_listPage").appendChild(newPage);
     }
 
-    next = document.querySelector(".container_item_btn_item_btn_next");
-    next.addEventListener('click', () => {
-        if (thisPage != count) {
-            changePage(thisPage + 1);
-        }
-        else {
-            changePage(thisPage);
-        }
-    })
+    
+    if(thisPage !=count){
+        let next= document.createElement("li");
+        next.innerText = "Trang sau";
+        next.classList.add("container_item_btn_item");
+        next.setAttribute("onclick", "changePage(" + (thisPage + 1) + ")");
+        document.querySelector(".container_item_btn_listPage").appendChild(next);
+    }
+        
+    
 
 
 }
@@ -106,3 +105,10 @@ function changePage(page) {
     thisPage = page;
     loadPage();
 }
+
+
+
+
+
+
+

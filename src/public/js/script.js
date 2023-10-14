@@ -12,10 +12,11 @@ loginLink.addEventListener('click', () => {
 });
 
 
-// const btn = document.querySelector('.btn1');
-// const btn_login=document.querySelector(".header_login");
-// const btn_signup=document.querySelector(".header_signup");
+const btn = document.querySelector('.btn1');
+const btn_login=document.querySelector(".header_login");
+const btn_signup=document.querySelector(".header_signup");
 
-// btn.addEventListener('click', () => {
-//     res.redirect('/login');
-// });
+
+btn.addEventListener('click', () => {
+    window.location.href = "/create";
+});
