@@ -21,6 +21,10 @@ post_news.addEventListener("click",()=>{
             information_author.style.display="none";
         }
         form.style.display="block";
+        fix_information_author.classList.remove("highLight");
+        change_password.classList.remove("highLight");
+        manage_post.classList.remove("highLight");
+        post_news.classList.add("highLight");
     }
 });
 manage_post.addEventListener("click",()=>{
@@ -35,7 +39,10 @@ manage_post.addEventListener("click",()=>{
             information_author.style.display="none";
         }
         post.style.display="block";
-        manage_post.style.color="red";
+        fix_information_author.classList.remove("highLight");
+        change_password.classList.remove("highLight");
+        manage_post.classList.add("highLight");
+        post_news.classList.remove("highLight");
     }   
 });
 
@@ -51,12 +58,17 @@ change_password.addEventListener("click",()=>{
             information_author.style.display="none";
         }
         password.style.display="block";
+        fix_information_author.classList.remove("highLight");
+        change_password.classList.add("highLight");
+        manage_post.classList.remove("highLight");
+        post_news.classList.remove("highLight");
     }
 });
 fix_information_author.addEventListener("click",()=>{
     if(information_author.style.display="none"){
         if(form.style.display="block"){
             form.style.display="none";
+            
         }
         if(post.style.display="block"){
             post.style.display="none";
@@ -65,6 +77,11 @@ fix_information_author.addEventListener("click",()=>{
             password.style.display="none";
         }
         information_author.style.display="block";
+        fix_information_author.classList.add("highLight");
+        change_password.classList.remove("highLight");
+        manage_post.classList.remove("highLight");
+        post_news.classList.remove("highLight");
+
     }
 });
 

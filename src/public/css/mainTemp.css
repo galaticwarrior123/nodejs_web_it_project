@@ -191,18 +191,17 @@ a {
 
 .manage_post {
   height: 800px;
-  width: 100%;
+  width: 80%;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 10px;
+  margin-left: 10%;
   display: none; }
-
-.manage_post_nav {
-  height: 800px;
-  width: 100%; }
 
 .manage_post_title {
   color: #000;
-  font-family: 'Be VietNam Pro', sans-serif; }
+  font-family: 'Be VietNam Pro', sans-serif;
+  position: relative;
+  top: 5px; }
 
 .manage_post_body_item {
   border-top: 1px solid #f07878; }
@@ -235,7 +234,7 @@ a {
 
 .manage_post_list_pagination {
   display: flex;
-  margin-left: 32%; }
+  margin-left: 30%; }
 
 .manage_post_list_pagination_btn {
   display: flex; }
@@ -256,7 +255,6 @@ a {
   cursor: pointer; }
 
 .change_password {
-  height: 300px;
   width: 50%;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 10px;
@@ -271,9 +269,11 @@ a {
 
 .change_password_title {
   color: #000;
-  font-family: 'Be VietNam Pro', sans-serif; }
+  font-family: 'Be VietNam Pro', sans-serif;
+  position: relative;
+  top: 5px; }
 
-.change_password_body_item_info_title h3 {
+.change_password_body_item_info_title label {
   margin: 0;
   color: #000;
   font-family: 'Be VietNam Pro', sans-serif; }
@@ -286,7 +286,6 @@ a {
   margin-left: 10px; }
 
 .fix_information_author {
-  height: 400px;
   width: 50%;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 10px;
@@ -295,7 +294,9 @@ a {
 
 .fix_information_author_title {
   color: #000;
-  font-family: 'Be VietNam Pro', sans-serif; }
+  font-family: 'Be VietNam Pro', sans-serif;
+  position: relative;
+  top: 5px; }
 
 .fix_information_author_body {
   line-height: 3; }
@@ -303,7 +304,7 @@ a {
 .fix_information_author_body_item_information {
   display: flex; }
 
-.fix_information_author_body_item_information_title h3 {
+.fix_information_author_body_item_information_title label {
   margin-top: 0;
   color: #000;
   font-family: 'Be VietNam Pro', sans-serif; }
