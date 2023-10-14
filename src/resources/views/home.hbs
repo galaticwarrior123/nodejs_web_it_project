@@ -124,10 +124,12 @@
 
             <figure class="container_item_product_detail_post_image">
               <a href="detail/show/{{this.slug}}">
-                <img class="container_item_product_img" src="/src/public/img/{{this.image}}" alt="">
+                {{#each this.image}}
+                <img class="container_item_product_img" src="/src/public/img/{{}}" alt="">
+                {{/each}}
               </a>
               <div class="container_item_product_detail_post_image_quantity">
-                <span class="container_item_product_detail_post_image_quantity_detail">1 ảnh</span>
+                <span class="container_item_product_detail_post_image_count">1 ảnh</span>
               </div>
             </figure>
 
@@ -179,9 +181,15 @@
 
 
     <div class="container_item_btn">
+      <div class="container_item_btn_item_icon">
+        <button class="item_btn prev">Trang trước</button>
+      </div>
       <ul class="container_item_btn_listPage">
         <li class="container_item_btn_item hightLight"></li>
       </ul>
+      <div class="container_item_btn_item_icon">
+        <button class="item_btn next">Trang sau</button>
+      </div>
     </div>
 
   </div>

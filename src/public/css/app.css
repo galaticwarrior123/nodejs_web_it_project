@@ -345,7 +345,7 @@ body {
 .container_item_product_detail_post_image_quantity {
   margin-top: -25px; }
 
-.container_item_product_detail_post_image_quantity_detail {
+.container_item_product_detail_post_image_count {
   margin-left: -190px;
   padding: 1px 5px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -461,6 +461,17 @@ img {
   border-radius: 5px;
   cursor: pointer;
   margin: 0 10px; }
+
+.container_item_btn_item_icon {
+  padding: 10px; }
+
+.item_btn {
+  padding: 12px;
+  margin-top: 6px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px #fff;
+  cursor: pointer; }
 
 .highLight {
   background-color: #c68c21; }
