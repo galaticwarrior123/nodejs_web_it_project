@@ -128,10 +128,10 @@ function listPost() {
 
     for (i = 1; i <= count; i++) {
         let newPost = document.createElement("li");
+        newPost.classList.add("manage_post_list_btn")
         newPost.innerText = i;
         if (i == thisPost) {
-            newPost.classList.add("highLight");
-            
+            newPost.classList.add("mainLight");
         }
         newPost.setAttribute("onclick", "changePost(" + i + ")");
         document.querySelector(".manage_post_list_pagination_btn").appendChild(newPost);

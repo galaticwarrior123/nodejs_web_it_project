@@ -241,22 +241,26 @@ a {
   margin-left: 30%; }
 
 .manage_post_list_pagination_btn {
-  display: flex; }
+  display: flex;
+  margin-top: 12px;
+  height: 40px; }
 
-.manage_post_list_pagination_btn li {
-  padding: 15px 20px;
+.manage_post_list_btn {
+  padding: 10px 20px;
   background-color: #f07878;
   margin: 0 20px;
+  border-radius: 5px;
   cursor: pointer; }
 
 .manage_post_list_pagination_btn_action {
-  padding: 0 25px;
+  padding: 0 20px;
   margin-bottom: 15px;
   margin-top: 12px;
   border-radius: 5px;
   background-color: #fff;
   border: 1px #fff;
-  cursor: pointer; }
+  cursor: pointer;
+  height: 40px; }
 
 .change_password {
   width: 50%;
@@ -319,3 +323,6 @@ a {
   margin-left: 10px;
   border-radius: 10px;
   border: 1px solid #fff; }
+
+.mainLight {
+  background-color: #97b958; }
