@@ -197,6 +197,10 @@ a {
   margin-left: 10%;
   display: none; }
 
+.manage_post_nav {
+  height: 800px;
+  width: 100%; }
+
 .manage_post_title {
   color: #000;
   font-family: 'Be VietNam Pro', sans-serif;
