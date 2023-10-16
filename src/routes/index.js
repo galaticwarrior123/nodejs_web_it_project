@@ -4,8 +4,10 @@ const troRouter=require('./dstro')
 const createRouter=require('./create')
 const detailRouter=require('./detail')
 const loginRouter=require('./login')  
+const registerRouter=require('./register')
 function routes(app) {
     
+    app.use('/register',registerRouter);
     app.use('/login',loginRouter);
     app.use('/detail',detailRouter)
     app.use('/create',createRouter)

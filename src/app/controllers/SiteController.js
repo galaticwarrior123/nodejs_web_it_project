@@ -1,8 +1,8 @@
 const tro = require('../models/Tro')
 
 const { mutipleMongooseToObject } = require('../../util/mongoose');
-class SiteController{
 
+class SiteController{
 
     // [GET] 
     index1(req,res,next){
@@ -10,6 +10,7 @@ class SiteController{
         tro.find({}).then(dstro => {
             res.render('home',{
                 dstro: mutipleMongooseToObject(dstro),
+
             });
         })
 

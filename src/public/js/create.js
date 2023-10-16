@@ -28,6 +28,11 @@ post_news.addEventListener("click",()=>{
     }
 });
 manage_post.addEventListener("click",()=>{
+
+    fix_post=document.querySelector(".fix_post");
+    fix_post_btn = document.querySelector(".btn-primary.fix");
+    
+
     if(post.style.display="none"){
         if(form.style.display="block"){
             form.style.display="none";
@@ -43,7 +48,14 @@ manage_post.addEventListener("click",()=>{
         change_password.classList.remove("highLight");
         manage_post.classList.add("highLight");
         post_news.classList.remove("highLight");
-    }   
+
+        fix_post_btn.addEventListener("click",()=>{
+            fix_post.style.display="block";
+            manage_post.style.display="none";
+        });
+    } 
+    
+    
 });
 
 change_password.addEventListener("click",()=>{
@@ -64,6 +76,8 @@ change_password.addEventListener("click",()=>{
         post_news.classList.remove("highLight");
     }
 });
+
+
 fix_information_author.addEventListener("click",()=>{
     if(information_author.style.display="none"){
         if(form.style.display="block"){

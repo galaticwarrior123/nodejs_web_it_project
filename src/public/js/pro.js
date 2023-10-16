@@ -3,14 +3,18 @@ area = document.querySelector('.option_location');
 price_list = document.querySelector('.option_price_list_nocart');
 price = document.querySelector('.option_price');
 
-btn = document.querySelector(".btn1");
+
 
 btn_login = document.querySelector(".header_login");
 btn_signup = document.querySelector(".header_signup");
 
 
-form_login = document.querySelector(".form-box login");
-form_signup = document.querySelector(".form-box register");
+btn_login.addEventListener('click', () => {
+    window.location= "/login";
+});
+btn_signup.addEventListener('click', () => {
+    window.location= "/register";
+});
 
 
 
@@ -101,22 +105,3 @@ function changePage(page) {
 }
 
 
-
-
-
-// if(thisPage !=1){
-//     let prev= document.createElement("li");
-//     prev.innerText = "Trang trước";
-//     prev.classList.add("container_item_btn_item");
-//     prev.setAttribute("onclick", "changePage(" + (thisPage - 1) + ")");
-//     document.querySelector(".container_item_btn_listPage").appendChild(prev);
-// }
-
-
-// if(thisPage !=count){
-//     let next= document.createElement("li");
-//     next.innerText = "Trang sau";
-//     next.classList.add("container_item_btn_item");
-//     next.setAttribute("onclick", "changePage(" + (thisPage + 1) + ")");
-//     document.querySelector(".container_item_btn_listPage").appendChild(next);
-// }

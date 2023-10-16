@@ -3,6 +3,8 @@ let listImg= document.querySelectorAll('.img_detail');
 let thisImage = 1;
 let limitImage = 1;
 
+
+
 btn_next = document.querySelector('.show_detail_image_btn_right');
 btn_prev = document.querySelector('.show_detail_image_btn_left');
 btn_next.addEventListener('click', () => {
