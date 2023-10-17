@@ -196,7 +196,7 @@ body{
     cursor:pointer;
     padding: 0 10px 0 15px;
     background-color: #fff;
-    border:1px solid #fff;
+    border:none;
 }
 .container_nav_btn_submit::before{
     display:table;
@@ -498,8 +498,13 @@ img{
     display: flex;
 }
 .container_item_product_detail_post_mes_logo_author{
-    margin: 15px 5px 2px 5px;    
+    margin: 8px 5px 2px 5px;    
 }
+.container_item_product_detail_post_mes_logo_author img{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+} 
 .post_user{
     font-size: 16px;
     line-height: 1;
