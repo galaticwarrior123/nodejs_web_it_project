@@ -22,11 +22,15 @@ btn.addEventListener('click', () => {
 });
 
 
-url=window.location.href;
+const url=window.location.href;
 
 if(url=="http://localhost:3000/login"){
     logregBox.classList.remove('active');
 }
 else{
     logregBox.classList.add('active');
+}
+
+if(url.includes("login")){
+    console.log("Success");
 }

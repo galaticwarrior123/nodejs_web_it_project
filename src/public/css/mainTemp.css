@@ -220,6 +220,14 @@ a {
 .manage_post_body_item_info {
   line-height: 0; }
 
+.manage_post_body_item_info_detail p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 25px;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; }
+
 .btn-primary {
   background-color: #0033ff;
   width: 100%;
